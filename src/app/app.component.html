@@ -1,0 +1,29 @@
+<div class="main">
+  <ul>
+    <li><a routerLink="module-1">Module 1</a></li>
+    <li><a routerLink="module-2">Module 2</a></li>
+    <li><a routerLink="module-3">Module 3</a></li>
+  </ul>
+  <div>
+    <h1>App Module</h1>
+    <p>
+      This application shows how to assign an individual ErrorHandler per
+      module.<br />It is a very similar featuer that React provides with its
+      error boundaries<br />
+      That is only possible when both conditions are given:
+    </p>
+    <ol>
+      <li>The individual ErrorHandler is provided on the module level, and</li>
+      <li>
+        that module is lazy-loaded. This is because only with lazy-loading,
+        Angular creates an additional injector.
+      </li>
+    </ol>
+
+    <p>Click on the button and watch the console's log.</p>
+    <hr />
+    Application Level: <app-shared-button></app-shared-button>
+    <hr />
+    <router-outlet></router-outlet>
+  </div>
+</div>
